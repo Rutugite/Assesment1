@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('./background-image.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Form Container */
+.form-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 6px;
+    padding: 12px;
+    width: 85%;
+    max-width: 260px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h1 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #f3a6a6;
+    letter-spacing: 0.5px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    height: 28px;
+    padding: 4px;
+    margin: 5px 0 8px 0;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 0.75rem;
+}
+
+input::placeholder {
+    color: #777;
+    font-size: 0.7rem;
+}
+
+/* Mobile Number Input */
+input[name="mobile"] {
+    max-width: 100%;
+    height: 28px;
+    padding: 4px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 0.75rem;
+    margin: 5px 0 8px 0;
+}
+/* Mobile Error Message */
+p {
+    color: red;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+}
+
+/* Password Error Message */
+.password-error {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Captcha Container */
+.captcha-container {
+    margin-bottom: 8px;
+}
+
+.captcha-text {
+    background-color: #1f2b3b;
+    color: #fff;
+    padding: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 4px;
+}
+
+button.refresh-captcha {
+    background-color: #f3a6a6;
+    color: #000;
+    border: none;
+    padding: 4px 6px;
+    font-size: 0.7rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 3px;
+    transition: background 0.3s;
+}
+
+button.refresh-captcha:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Submit Button */
+.form-button {
+    background-color: #f3a6a6;
+    color: #000;
+    border: none;
+    padding: 6px 0;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .form-container {
+        padding: 8px;
+        max-width: 220px;
+    }
+
+    .form-container h1 {
+        font-size: 1.2rem;
+    }
+
+    input {
+        font-size: 0.7rem;
+        height: 26px;
+    }
+
+    .captcha-text {
+        font-size: 0.7rem;
+    }
+
+    button.refresh-captcha {
+        font-size: 0.65rem;
+        padding: 3px 5px;
+    }
+
+    .form-button {
+        font-size: 0.75rem;
+        padding: 5px 0;
+    }
+}

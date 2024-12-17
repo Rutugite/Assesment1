@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures the buttons stay at the bottom */
+  min-height: 100vh; /* Takes full viewport height */
+  margin: 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Push content to the bottom */
+  margin: auto; /* Center the container */
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Ensures buttons span across the width */
+  margin-top: auto; /* Push buttons to the end of the container */
+}
